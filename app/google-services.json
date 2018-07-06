@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "921790064702",
+    "firebase_url": "https://gary-portal.firebaseio.com",
+    "project_id": "gary-portal",
+    "storage_bucket": "gary-portal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:921790064702:android:1bc08f8a93b66f74",
+        "android_client_info": {
+          "package_name": "com.almurray.android.almurrayportal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "921790064702-1sns00916v188jeb6vdtg8592nbdl77r.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "921790064702-1sns00916v188jeb6vdtg8592nbdl77r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJGbIKmiFTcZp_Mnx44uXaEupoi4Gimf0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.almurray.android.almurrayportal.firstPages.firstSteps"
+    android:background="@drawable/colback">
+
+    <TextView
+        android:id="@+id/firstPageWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/monteserratsemibold"
+        android:textSize="14pt"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:layout_below="@+id/firstPageWelcome"
+        android:id="@+id/firstPageLogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/roundedbutton_white"
+        android:text="@string/login"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/montserratlight"
+        />
+    <Button
+        android:layout_below="@+id/firstPageLogin"
+        android:id="@+id/firstPageCreate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/roundedbutton_blue"
+        android:text="@string/createaccount"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserratregular"
+        />
+    <TextView
+        android:id="@+id/firstPageWebsite"
+        android:layout_below="@+id/firstPageCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:text="@string/visitWebsite"
+        android:fontFamily="@font/montserratextralight"
+        android:textAlignment="center"/>
+
+
+</RelativeLayout>

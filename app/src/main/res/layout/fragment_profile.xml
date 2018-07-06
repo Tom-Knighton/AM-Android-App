@@ -1,0 +1,467 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.almurray.android.almurrayportal.main.profileFragment">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/profileScroller">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/profileHeader1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundedbutton_white"
+                android:layout_margin="10dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileImage"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:id="@+id/profileName"
+                    android:layout_below="@+id/profileImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:fontFamily="@font/monteserratsemibold"
+                    android:textSize="25sp"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:id="@+id/profileSName"
+                    android:layout_below="@id/profileName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:fontFamily="@font/montserratregular"
+                    android:textSize="23sp"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="10dp"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/profileGoToWeb"
+                    android:layout_below="@+id/profileSName"
+                    android:background="@drawable/rounded_bluepink"
+                    android:layout_margin="10dp"
+                    android:text="@string/profile_website"
+                    android:fontFamily="@font/montserratregular"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundedbutton_white"
+                android:id="@+id/profileHeader2"
+                android:layout_below="@+id/profileHeader1"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/points"
+                    android:fontFamily="@font/montserratlight"
+                    android:textSize="30sp"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/profilePoints"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/profileAPoints"
+                    android:layout_below="@+id/profilePoints"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/monteserratsemibold"
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/profilePPoints"
+                    android:layout_below="@+id/profileAPoints"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/monteserratsemibold"
+                    android:layout_marginBottom="10dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundedbutton_white"
+                android:id="@+id/profileHeader3"
+                android:layout_below="@+id/profileHeader2"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stats"
+                    android:fontFamily="@font/montserratlight"
+                    android:textSize="30sp"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/profileStats"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aRank"
+                    android:id="@+id/profileStatA"
+                    android:layout_below="@+id/profileStats"
+                    android:textSize="18sp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/monteserratsemibold"
+                    android:textColor="@android:color/black"
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/profileStatAR"
+                    android:layout_below="@+id/profileStatA"
+                    android:textSize="22sp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/monteserratsemibold"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pRank"
+                    android:id="@+id/profileStatP"
+                    android:layout_below="@+id/profileStatAR"
+                    android:textSize="18sp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/monteserratsemibold"
+                    android:textColor="@android:color/black"
+                    android:layout_marginBottom="15dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/profileStatPR"
+                    android:layout_below="@+id/profileStatP"
+                    android:textSize="22sp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/monteserratsemibold"
+                    android:layout_marginBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/team"
+                    android:id="@+id/profileStatT"
+                    android:layout_below="@+id/profileStatPR"
+                    android:textSize="18sp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/monteserratsemibold"
+                    android:textColor="@android:color/black"
+                    android:layout_marginBottom="15dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/profileStatTR"
+                    android:layout_below="@+id/profileStatT"
+                    android:textSize="22sp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/monteserratsemibold"
+                    android:layout_marginBottom="10dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="40dp"
+                android:id="@+id/profileHeader4"
+                android:layout_below="@id/profileHeader3"
+                android:background="@drawable/roundedbutton_white">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/misc"
+                    android:fontFamily="@font/montserratlight"
+                    android:textSize="30sp"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="20dp"
+                    android:id="@+id/profileMisc"/>
+
+                <Button
+                    android:id="@+id/profilePrayer"
+                    android:layout_below="@id/profileMisc"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/prayerRoom"
+                    android:background="@drawable/rounded_prayer_purple"
+                    android:fontFamily="@font/montserratregular"
+                    android:textColor="@android:color/white"/>
+
+                <Button
+                    android:id="@+id/profileRR"
+                    android:layout_below="@id/profilePrayer"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/RR"
+                    android:background="@drawable/rounded_rr_pink"
+                    android:fontFamily="@font/montserratregular"
+                    android:textColor="@android:color/white"/>
+
+                <Button
+                    android:id="@+id/profileFeedback"
+                    android:layout_below="@id/profileRR"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/FEEDBACK"
+                    android:background="@drawable/rounded_bluepink"
+                    android:fontFamily="@font/montserratregular"
+                    android:textColor="@android:color/white"/>
+
+                <Button
+                    android:id="@+id/profileCD"
+                    android:layout_below="@id/profileFeedback"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cd"
+                    android:background="@drawable/rounded_bluepink"
+                    android:fontFamily="@font/montserratregular"
+                    android:textColor="@android:color/white"/>
+
+                <Button
+                    android:id="@+id/profileSettings"
+                    android:layout_below="@id/profileCD"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings"
+                    android:background="@drawable/rounded_settings_gray"
+                    android:fontFamily="@font/montserratregular"
+                    android:textColor="@android:color/white"/>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#73000000"
+        android:id="@+id/prayerContainer"
+        android:visibility="gone">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:background="@drawable/roundedbutton_white"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="25dp">
+            <TextView
+                android:id="@+id/prayersTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/prayerroomtitle"
+                android:fontFamily="@font/monteserratsemibold"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:textSize="22sp"/>
+            <TextView
+                android:id="@+id/prayersCurrent"
+                android:layout_below="@id/prayersTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/currentprayers"
+                android:fontFamily="@font/montserratregular"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/prayersSimple"
+                android:layout_below="@id/prayersCurrent"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/rounded_prayer_purple"
+                android:fontFamily="@font/montserratregular"
+                android:textSize="20sp"
+                android:text="@string/simplePrayer"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/prayersMeaningful"
+                android:layout_below="@id/prayersSimple"
+                android:layout_margin="20dp"
+                android:background="@drawable/rounded_rr_pink"
+                android:fontFamily="@font/montserratregular"
+                android:textSize="20sp"
+                android:text="@string/meaningfulPrayer"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false"/>
+            <TextView
+
+                android:id="@+id/prayersNotice"
+                android:layout_below="@id/prayersMeaningful"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/prayernotice"
+                android:fontFamily="@font/montserratextralight"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"/>
+
+
+
+            <Button
+                android:layout_above="@id/prayersGoBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/prayersAdmin"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_bluepink"
+                android:fontFamily="@font/montserratregular"
+                android:textSize="16sp"
+                android:text="@string/prayeradmin"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/prayersGoBack"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_bluepink"
+                android:fontFamily="@font/montserratregular"
+                android:textSize="16sp"
+                android:text="@string/goback"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false">
+
+            </Button>
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#73000000"
+        android:id="@+id/settingsContainer"
+        android:visibility="gone">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:background="@drawable/roundedbutton_white"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="25dp">
+            <TextView
+                android:id="@+id/settingsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/settingsTitle"
+                android:fontFamily="@font/monteserratsemibold"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:textSize="22sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/settingsTitle"
+                android:layout_marginTop="40dp">
+                <Switch
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/compactGGSetting"
+                    android:fontFamily="@font/montserratregular"
+                    android:textSize="18sp"
+                    android:layout_margin="15dp"
+                    android:id="@+id/settingGGSwitch"
+                    />
+                <Switch
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/largeChatSetting"
+                    android:fontFamily="@font/montserratregular"
+                    android:textSize="18sp"
+                    android:layout_margin="15dp"
+                    android:id="@+id/settingChatSwitch"
+                    />
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/settingGoBack"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_bluepink"
+                android:fontFamily="@font/montserratregular"
+                android:textSize="16sp"
+                android:text="@string/goback"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false">
+
+            </Button>
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

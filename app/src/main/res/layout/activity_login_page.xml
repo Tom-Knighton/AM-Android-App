@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.almurray.android.almurrayportal.firstPages.loginPage"
+    android:background="@drawable/colback">
+
+    <TextView
+        android:id="@+id/firstPageWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/monteserratsemibold"
+        android:textSize="14pt"
+        android:textAlignment="center"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/login_create_bg"
+        android:layout_marginTop="100dp">
+
+        <EditText
+            android:layout_margin="20dp"
+            android:id="@+id/loginEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:fontFamily="@font/montserratregular"
+            android:hint="@string/emailaddress"
+            android:textAlignment="center"
+            />
+
+        <EditText
+            android:layout_margin="20dp"
+            android:layout_below="@id/loginEmail"
+            android:id="@+id/loginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:fontFamily="@font/montserratregular"
+            android:hint="@string/password"
+            android:textAlignment="center"
+            />
+
+        <Button
+            android:layout_margin="20dp"
+            android:id="@+id/loginLogin"
+            android:layout_below="@id/loginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/monteserratsemibold"
+            android:text="@string/log_in"
+            android:background="@drawable/roundedbutton_blue"
+            android:textColor="@color/white"/>
+        <Button
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginEnd="40dp"
+            android:id="@+id/loginGoBack"
+            android:layout_below="@id/loginLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserratlight"
+            android:text="@string/goback"
+            android:background="@drawable/roundedbutton_blue"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>
